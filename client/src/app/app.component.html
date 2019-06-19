@@ -1,0 +1,22 @@
+<div id="hidden" class="container">
+  <h1 class="display-4 font-weight-bold">What Did You Say?</h1>
+  <div class="messageview">
+    <!-- <table class="table table-sm table-responsive lead">
+      <tbody id="messages">
+        <% for (var x in key) { %>
+        <tr>
+          <td class="font-weight-bold"><%= key[x].name %>:</td>
+          <td><%= key[x].message %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table> -->
+  </div>
+  <form id="forms" (submit)="submitButton()">
+    <div class="form-group">
+      <input id="message" type="text" name="message" class="form-control-sm align-top" name="message" [(ngModel)]="message">
+      <button id="sendbutton" class="btn btn-secondary btn-sm align-top" type="submit">Send</button>
+    </div>
+  </form>
+</div>
+<br> {{error}}
